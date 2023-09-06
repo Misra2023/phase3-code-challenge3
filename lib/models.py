@@ -38,4 +38,4 @@ class Review(Base):
 
     # Define the relationships with Restaurant and Customer
     restaurant = relationship('Restaurant', back_populates='reviews')
-    customer = relationship('Customer', back_populates='reviews'):
+    customer = relationship('Customer', back_populates='reviews')

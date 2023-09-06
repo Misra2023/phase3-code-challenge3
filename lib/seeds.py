@@ -5,7 +5,7 @@ from models import Base, Restaurant, Customer, Review
 
 
 engine = create_engine('sqlite:///restaurant_reviews.db')
-Base.metadate.create_all(engine)
+Base.metadata.create_all(engine)
 session = sessionmaker(bind=engine)
 session = session()
 
